@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031D4CDF2EBEEA415F559408 /* libPods-GPUImage_demo01.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BAFE778BFD235EB041C4B6D /* libPods-GPUImage_demo01.a */; };
 		F251606C24F5124400B27781 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F251606B24F5124400B27781 /* AppDelegate.m */; };
 		F251606F24F5124400B27781 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F251606E24F5124400B27781 /* SceneDelegate.m */; };
 		F251607224F5124400B27781 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F251607124F5124400B27781 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6BAFE778BFD235EB041C4B6D /* libPods-GPUImage_demo01.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPUImage_demo01.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA22A4B34CD69882DCD0E058 /* Pods-GPUImage_demo01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImage_demo01.debug.xcconfig"; path = "Target Support Files/Pods-GPUImage_demo01/Pods-GPUImage_demo01.debug.xcconfig"; sourceTree = "<group>"; };
 		F251606724F5124400B27781 /* GPUImage_demo01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPUImage_demo01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F251606A24F5124400B27781 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F251606B24F5124400B27781 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		F251607924F5124500B27781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F251607B24F5124500B27781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F251607C24F5124500B27781 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAAD92146FA68E4B359429D8 /* Pods-GPUImage_demo01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImage_demo01.release.xcconfig"; path = "Target Support Files/Pods-GPUImage_demo01/Pods-GPUImage_demo01.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031D4CDF2EBEEA415F559408 /* libPods-GPUImage_demo01.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144C9F4DFFDD0FA3EFB7218A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BAFE778BFD235EB041C4B6D /* libPods-GPUImage_demo01.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEC10ECF680138BEF6BD0B53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA22A4B34CD69882DCD0E058 /* Pods-GPUImage_demo01.debug.xcconfig */,
+				FAAD92146FA68E4B359429D8 /* Pods-GPUImage_demo01.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F251605E24F5124400B27781 = {
 			isa = PBXGroup;
 			children = (
 				F251606924F5124400B27781 /* GPUImage_demo01 */,
 				F251606824F5124400B27781 /* Products */,
+				CEC10ECF680138BEF6BD0B53 /* Pods */,
+				144C9F4DFFDD0FA3EFB7218A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F251608024F5124500B27781 /* Build configuration list for PBXNativeTarget "GPUImage_demo01" */;
 			buildPhases = (
+				E04CF69F1283858E83E68AA0 /* [CP] Check Pods Manifest.lock */,
 				F251606324F5124400B27781 /* Sources */,
 				F251606424F5124400B27781 /* Frameworks */,
 				F251606524F5124400B27781 /* Resources */,
+				15A3AE4115B0784DA5864EF7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15A3AE4115B0784DA5864EF7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GPUImage_demo01/Pods-GPUImage_demo01-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GPUImage_demo01/Pods-GPUImage_demo01-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GPUImage_demo01/Pods-GPUImage_demo01-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E04CF69F1283858E83E68AA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPUImage_demo01-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F251606324F5124400B27781 /* Sources */ = {
@@ -287,10 +356,12 @@
 		};
 		F251608124F5124500B27781 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA22A4B34CD69882DCD0E058 /* Pods-GPUImage_demo01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GPUImage_demo01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,10 +374,12 @@
 		};
 		F251608224F5124500B27781 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAAD92146FA68E4B359429D8 /* Pods-GPUImage_demo01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GPUImage_demo01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

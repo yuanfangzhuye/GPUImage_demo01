@@ -1,0 +1,16 @@
+PODS:
+  - GPUImage (0.1.7)
+
+DEPENDENCIES:
+  - GPUImage
+
+SPEC REPOS:
+  trunk:
+    - GPUImage
+
+SPEC CHECKSUMS:
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+
+PODFILE CHECKSUM: 7b8d9be323dc87897f68f819f8b5f4910de04a5d
+
+COCOAPODS: 1.9.2
