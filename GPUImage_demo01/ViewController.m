@@ -73,7 +73,7 @@
         }];
         
         //获取拍摄的图片
-//        UIImage * image = [UIImage imageWithData:processedJPEG];
+        UIImage * image = [UIImage imageWithData:processedJPEG];
     }];
 }
 
